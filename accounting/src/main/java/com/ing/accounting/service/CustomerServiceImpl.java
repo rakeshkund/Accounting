@@ -1,5 +1,6 @@
 package com.ing.accounting.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -11,8 +12,10 @@ public class CustomerServiceImpl implements CustomerService{
 
 	@Override
 	public  List<CustomerVO> findAllCustomers() {
-		
-		return null;
+		List<CustomerVO> customers = new ArrayList<CustomerVO>();
+		CustomerVO custtomer = new CustomerVO();
+		custtomer.setFullname("John Doe");
+		return customers;
 	}
 	
 
