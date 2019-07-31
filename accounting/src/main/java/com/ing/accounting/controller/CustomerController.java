@@ -20,17 +20,17 @@ public class CustomerController {
 CustomerService customerService;
 
 @GetMapping(value = "/customers", produces = MediaType.APPLICATION_JSON_VALUE)
-//public ResponseEntity<CustomerVO> getUserById() {
-	public List<CustomerVO> getUserById() {
+// public ResponseEntity<CustomerVO> getCustomers() {
+	public List<CustomerVO> getCustomers() {
     List<CustomerVO> customers = customerService.findAllCustomers();
-    
     return customers;
+//    return customers;
     
-		/*
-		 * if (StringUtils.isEmpty(customers) || customers.isEmpty()) { return new
-		 * ResponseEntity<CustomerVO>(HttpStatus.NOT_FOUND); } return new
-		 * ResponseEntity<CustomerVO>(customers, HttpStatus.OK);
-		 */
+		
+		  /*if (StringUtils.isEmpty(customers) || customers.isEmpty()) { return new
+		  ResponseEntity<CustomerVO>(HttpStatus.NOT_FOUND); } return new
+		  ResponseEntity<CustomerVO>(HttpStatus.OK);*/
+		 
 }
 
 }

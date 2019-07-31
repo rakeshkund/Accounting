@@ -15,6 +15,7 @@ public class CustomerServiceImpl implements CustomerService{
 		List<CustomerVO> customers = new ArrayList<CustomerVO>();
 		CustomerVO custtomer = new CustomerVO();
 		custtomer.setFullname("John Doe");
+		customers.add(custtomer);
 		return customers;
 	}
 	
